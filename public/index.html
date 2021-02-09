@@ -1,0 +1,514 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/se-logo.png">
+
+
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #897896 0%, #580E7F 100%);
+        }
+
+        .flexthis{
+            display: -webkit-box !important;
+            display: -webkit-flex !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -webkit-flex-wrap: wrap !important;
+            -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
+        }
+    </style>
+
+
+</head>
+<body class=" bg-light leading-normal tracking-normal text-light" style="font-family: 'Source Sans Pro', sans-serif;">
+
+
+        <nav id="header" class="fixed w-full z-30 top-0 sm:px-20 px-2 text-highlighted">
+            <div class="w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
+                <div class="flex items-center">
+                    <a class="toggleColour no-underline hover:no-underline" href="./index.html">
+                        <img class="h-16 w-16" src="img/se-logo.png" alt="se-logo">
+                    </a>
+                </div>
+
+                <div class="block lg:hidden">
+                    <button id="nav-toggle" class="flex items-center text-highlighted hover:text-secondary-100 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+
+
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-light lg:bg-transparent lg:p-0 z-20" id="nav-content">
+                    <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                        <li class="mr-3">
+                            <a class="inline-block hover:text-secondary-100 py-2 px-4 font-bold no-underline" href="./index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="mr-3">
+                            <a class="inline-block no-underline hover:text-secondary-100 hover:text-underline py-2 px-4" href="./eril_disil_kartlari/index.html">Eril-Dişil Kartları</a>
+                        </li>
+                        <li class="mr-3">
+                            <a class="inline-block no-underline hover:text-secondary-100 hover:text-underline py-2 px-4" href="./index_eng.html">English</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="bg-dark">
+
+            <div id="promotion" class="mx-auto flex flex-col md:flex-row items-center pt-24 text-light">
+
+                <!--Left Col-->
+                <div class="flex flex-col md:w-1/2 sm:w-full  justify-center items-start pt-12 p-2 sm:p-0">
+
+                    <div class="bg-primary w-1/2">
+                        <p class="uppercase tracking-loose w-full bg-primary p-4 pl-20">Uranyen Astrolog</p>
+                    </div>
+
+                    <div class="z-10  lg:pl-40 sm:pl-12">
+                        <h1 class="my-6 text-6xl font-bold leading-tight">
+                            Sevilay Eriçdem
+                        </h1>
+
+                        <p class="leading-normal text-2xl mb-8">
+                            Türkiye’nin ilk „Uranyen Astrolog“ ünvanına sahip,
+                            Komik Bilinç Okulu’nun ve Uranyen Astroloji Derneği’nin kurucusu,
+                            20 yıllık deneyime sahip eğitmen ve yazar
+                        </p>
+
+                        <!--Social Media-->
+                        <div class="w-full md:pl-0 sm:px-40 md:pr-48">
+                            <div class="text-secondary-100 mt-6 pb-16 flex flex-wrap items-center justify-between">
+                                <a class="link" href="https://www.facebook.com/sevilayericdem" data-tippy-content="@facebook_handle"><svg class="h-6 fill-current  hover:text-primary" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg></a>
+                                <a class="link" href="https://twitter.com/SevilayEricdem" data-tippy-content="@twitter_handle"><svg class="h-6 fill-current  hover:text-primary" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></a>
+                                <a class="link" href="https://www.instagram.com/uranyenastrolog/" data-tippy-content="@instagram_handle"><svg class="h-6 fill-current  hover:text-primary" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+                                <a class="link" href="https://www.youtube.com/channel/UC9G-oDbWQtZTTDfXHljyV1w" data-tippy-content="@youtube_handle"><svg class="h-6 fill-current  hover:text-primary" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <!--Right Col-->
+
+                <div class="w-1/2 md:flex justify-end ">
+                    <!-- Image for mobile view-->
+                    <div class="block lg:hidden rounded-full shadow-xl mx-auto h-48 w-48 bg-cover bg-center" style="background-image: url('img/se-por-mini.png')"></div>
+
+                    <img class="w-full invisible md:visible justify-left" src="img/se-por-mor.png">
+                </div>
+            </div>
+
+
+            <!--bottom Col-->
+
+            <div class="pb-8 md:pl-4 lg:ml-24 text-2xl md:-mt-0 text-highlighted cursor-pointer -mt-90 justify-center">
+                <span id="appointment" class="hover:text-secondary-100 font-bold py-4 px-8 flex">
+                    <svg class="h-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                    Randevu
+                </span>
+
+                <div id="appointment-toggle" class="pl-12 hidden">
+                    <p class="my-3 ml-2">
+                        Sevilay Eriçdem’den danışmanlık randevusu
+                        alabilmek için lütfen kişisel asistanı Aycan Pişkiner
+                        ile iletişime geçiniz.
+                    </p>
+
+                    <span class="font-medium py-2 px-4 flex">
+                        <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <p class="-mt-1 ml-2">
+                            Email
+                        </p>
+                    </span>
+                    <p class="font-light  pl-12">
+                        info@kozmikbilincokulu.com
+                    </p>
+
+                    <span class="text-highlighted font-medium py-2 px-4 flex">
+                        <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                         <p class="-mt-1 ml-2">
+                            Telefon
+                        </p>
+                    </span>
+                    <p class="font-light  pl-12">
+                        0 (539) 660 20 62
+                    </p>
+
+
+                    <span class="font-medium py-2 px-4 flex">
+                        <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                         <p class="-mt-1 ml-2">
+                            09.00-18.00
+                        </p>
+                    </span>
+                    <p class="font-light  pl-12">
+                        Pazar Günleri Hariç
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div  id="about-me" class="w-full md:w2/3 flex flex-wrap  items-center  mx-auto my-32 px-12">
+
+                <!--Img Col-->
+                <div class="lg:w-1/4">
+                    <img src="img/se-cv-bg.png" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+                </div>
+
+                <!--Main Col-->
+                <div id="profile" class="w-full m-auto lg:w-3/4 md:mb-20 rounded-lg lg:rounded-r-lg lg:rounded-r-none shadow-2xl bg-secondary-100 opacity-75 m-6 lg:mx-0">
+
+                    <div class="p-4 md:p-12 text-center lg:text-left">
+                        <!-- Image for mobile view-->
+                        <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('img/se-cv-bg.png')"></div>
+
+                        <h1 class="my-6 md:text-6xl text-3xl font-bold leading-tight text-light">
+                            Hakkımda
+                        </h1>
+
+
+                        <div class="mx-auto lg:mx-0 pt-3 border-b-2 border-primary opacity-25"></div>
+                        <p class="pt-8 text-lg">
+                            Sevilay Eriçdem, 1969 yılında Türkiye’nin başkenti Ankara’da doğdu. Üniversite eğitimini Ankara
+                            Gazi Üniversitesi ve İdari Bilimler Fakültesi Maliye Bölümü’nde tamamladı. Üniversite eğitimi
+                            sırasında Türk Amerikan Derneği’nde (TAD) İngilizce eğitimi aldı ve mezun olana kadar aynı
+                            dernekte İngilizce eğitmeni olarak çalıştı. Astroloji her zaman Sevilay Eriçdem için bir tutku
+                            olmuştur. 1999 yılında profesyonelce astroloji yapmaya başladı. ‘AFA’ – Amerikan Astrologlar
+                            Federasyonu) ve Astrologlar Topluluğu kuruluşlarına üye oldu. Daha sonra astrolojinin farklı
+                            alanlarında araştırmalar yaptı ve sonunda uzmanlık alanı olarak Uranyen Astroloji’sine
+                            odaklandı. 2010’dan itibaren Uranian Astrology alanında kült ve Uranyen Astroloji’nin en etkili
+                            uygulayıcısı olan Amerikalı Martha Lang-Westcott’dan üç yıl boyunca bireysel dersler aldı.
+                            Sevilay Eriçdem, 2015 yılından bu yana Uranyen Astrolojisi ve Asteroit alanında eğitmen olarak
+                            çalışmaktadır. Aynı yıl konusunda markalaşmak amacıyla “Uranyen Astroloji Sevilay Eriçdem”
+                            markasını almıştır. 2016 yılında “URANYEN ASTROLOJİ” adında ilk kitabını yazdı. 2017 yılında
+                            “ASTEROİDLERİN BÜYÜLÜ DÜNYASI” adıyla ikinci bir kitap yazdı ve yayınladı.
+                            2020 yılında kendisi ve meslektaşlarıyla beraber Türkiye de ve Dünyada bir ilk olan Uranyen
+                            Astroloji Derneğini kurdu. Çalışmalarına dernek bünyesinde devam ediyor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="my-20 text-6xl font-bold leading-tight text-dark text-center">
+            Kitaplar
+        </h1>
+
+        <!--Posts Container-->
+        <div id="books" class="justify-center w-full sm:w-full md:w-3/4 m-auto">
+
+
+            <div class="container mx-auto mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
+
+                <div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative overflow-hidden pb-96"><img class="absolute h-full w-full object-cover object-center" src="img/book1.png"/></div>
+
+                        <div class="relative bg-light">
+                            <div class="py-10 px-8">
+                                <div class="w-full font-bold text-xl text-dark">Uranyen Astroloji</div>
+                                <div class="text-gray-600 text-sm font-medium flex mb-4 mt-2"><p>Basım yılı 2016</p></div>
+                                <p class="text-dark text-lg font-serif text-base mb-5">
+                                    Uranyen Astroloji bilinen en eski ve Helenistik döneme ait simetri ve gezegen
+                                    orta noktaları kullanılarak uygulanan bir tekniktir. İkinci dünya savaşı sırasında almanlar tarafından
+                                    kullanılan bu tekniğe ve yöntemlerine göre haritalarda nokta atışlı yorumlar yapmak mümkün olur.
+                                    Örnekleriyle ve transneptünyenler kullanarak açıkladığım uranyen astroloji tekniğinin
+                                    astrolojide uzmanlaşmak isteyen herkese muazzam kapılar açacağından şüpheniz olmasın.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <div class="relative overflow-hidden pb-96"><img class="absolute h-full w-full object-cover object-center" src="img/book2.png"/></div>
+
+                        <div class="relative bg-light">
+                            <div class="py-10 px-8">
+                                <div class="w-full font-bold text-xl text-dark">Asteroidlerin Büyülü Dünyası</div>
+                                <div class="text-gray-600 text-sm font-medium flex mb-4 mt-2"><p>Basım yılı 2018</p></div>
+                                <p class="text-dark text-lg font-serif text-base mb-5">
+                                    Asteroidler güneş sistemimizde mars ile Jüpiter arasında cupier belt olarak bilinen yerde
+                                    yaklaşık bir milyonun üzerinde bulunan gök cisimleridir. Bunlar bir gezegen enerjisinde
+                                    olmamakla birlikte birlikte hareket ettikleri gezegenlerle bireysel haritalar üzerinde kişiler
+                                    hakkında çok ince ve derin detaylı bilgileri içinde barındırır. Bu kitabımda yaklaşık 90 tane
+                                    asteroidin gezegenler ve transneptünyenlerle yaptıkları açı bağlantılarını ve anlamlarını
+                                    yazdım. Bu kitabı asteroidlerin büyülü dünyasına bir giriş kitabı olarak alıp okumalısınız.
+                                    Mitolojik anlamlarıyla astrolojik anlam zenginliğini de yakalamak mümkün olur.
+                                    Astrolojide uzmanlaşmak isteyenler muazzam bir kaynak kitap olduğundan
+                                    şüpheniz olmasın.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="bg-highlighted border-b py-8 mt-12">
+            <div class="container max-w-5xl mx-auto m-8">
+
+                <h1 class="my-14 text-6xl font-bold leading-tight text-light text-center">
+                    Dernek
+                </h1>
+
+                <div id="uad-info" class="w-full py-4 px-8 bg-light shadow-lg my-20">
+                    <div class="flex justify-center md:justify-end -mt-28">
+                        <img class="w-60 h-60 object-cover" src="img/uad-logo.png">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 py-6">
+                            Uranyen Astroloji Dernegi
+                        </h3>
+                        <p class="mt-2 text-dark text-lg">
+                            Uranyen Astrolojisi, Klasik Batı astrolojisinin uzantısı olarak var olan bir uzmanlık alanıdır.
+                            Uranyen astrolojiyi diğer astroloji sistemlerinden ayıran en önemli özelliği an’daki eylem kalitesine inerek kişilerin yaşamlarındaki seçimlerinde en doğru potansiyeli ortaya çıkartmalarına fayda sağlamasıdır.
+                            Türkiye’de bu uzmanlık alanını en yaygın ve en yetkin şekilde kullanan, marka tescilli Uranyen Astrolog Sevilay Eriçdem, bu alanda çıkardığı kitaplar, düzenlediği seminerler ve verdiği eğitimler ile Uranyen Astroloji’nin ülkemizde bilinirliğine katkı sağlamıştır. Aynı zamanda astroloji alanında yıllar süren birikim ve tecrübelerini, kurucusu olduğu Kozmik Bilinç Okulu çatısı altında toplayarak astrolojiye ilgi duyan birçok insana eğitim alma ve meslek edinme imkânı sağlamıştır. Gönüllülük Prensibi ile Kozmik Bilinç Okulu’nda da pek çok sosyal sorumluluk projeleri düzenleyen Uranyen Astrolog Sevilay Eriçdem, kendisi gibi astrolojiye gönül vermiş, bilgi birikimine güvendiği, toplumsal duyarlılığa önem veren meslektaşları ve eğitmenleriyle bir araya gelerek UAD Uranyen Astroloji Derneği’ni kurmuştur.
+                            UAD Derneğini kurma fikri, ülkemizde Uranyen Astroloji’ye duyulan ilgi ve hızla gelişmekte olan astroloji alanında, etik kuralların korunması, öncelikle mesleki yeterlilik sağlayarak kazanç elde etmek isteyenler için sağlıklı temeller çerçevesinde, hedefinden sapmadan ve süreç içerisindeki her aşamada karşılaşılabilecek sorunların etkin bir şekilde belirlenip, çözüm önerilerinin oluşturulması, uygulama süreçlerinde ortak anlayışların belirlenmesi, eğitmenlerle öğrenciler arasında verimli bir iletişim ve işbirliği platformunun oluşturulması ile birlikte sosyal sorumluluk ve toplumsal duyarlılık kapsamında yapılacak olan etkinliklerle kolektif fayda bilincinin yaygınlaşması esasına dayanarak ortaya çıkmıştır.
+                        </p>
+                    </div>
+                    <div class="flex justify-end mt-4">
+                        <a href="https://uranyenastrolojidernegi.com/" class="no-underline hover:text-secondary-100 text-highlighted">uranyenastrolojidernegi.com</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="bg-highlighted border-b py-8 mt-12">
+            <div class="container max-w-5xl mx-auto m-8">
+
+                <h1 class="my-14 text-6xl font-bold leading-tight text-light text-center">
+                    Okul
+                </h1>
+
+                <div id="kbo-info" class="w-full py-4 px-8 bg-light shadow-lg my-20">
+                    <div class="flex justify-center md:justify-end -mt-28">
+                        <img class="w-60 h-60 object-cover" src="img/kbo.logo.png">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 py-6">
+                            Kozmik Bilinç Okulu
+                        </h3>
+                        <p class="mt-2 text-dark text-lg">
+                            Kozmik bilinç okulu evrensel bilinç oluşturma ve geliştirme alanıdır.
+                            Bilinç altının en gizemli taraflarını ortaya çıkartırken bunları ruhun gelişimi için en faydalı şekilde kullanmayı hedefler.
+                            Okulumuzda Sevilay Eriçdem 20 yıllık tecrübesiyle eğitmenlere öncülük ederken, hepsi birbirinden değerli astroloji, reiki ve tarot eğitmenleri her sene öğrencilerine değişik kurs imkanları sunmaktadır.
+                            Bilgiyi yaymayı kendine slogan edinmiş Kozmik Bilinç Okulu'nda siz de ilgi duyduğunuz alanda eğitim alabilir, bu ekip ruhuna dahil olabilirsiniz.
+                        </p>
+                    </div>
+                    <div class="flex justify-end mt-4">
+                        <a href="https://www.kozmikbilincokulu.com/" class="no-underline hover:text-secondary-100 text-highlighted">kozmikbilincokulu.com</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!--Footer-->
+<footer class="bg-light">
+    <div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6">
+            <div class="flex-1">
+                <ul class="list-reset mb-6">
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+                        <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                            <img class="h-24" src="img/se-logo.png">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="flex-1  pl-4">
+                <p class="uppercase text-gray-500 underline md:mb-6">İletişim</p>
+                <ul class="list-reset mb-6">
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+                        <span class="flex">
+                            <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <p class=" ml-2">
+                                Email
+                            </p>
+                        </span>
+                        <p class="pl-8">
+                            info@kozmikbilincokulu.com
+                        </p>
+                    </li>
+
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+                        <span class="flex">
+                            <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>                                <p class=" ml-2">
+                                Telefon
+                            </p>
+                        </span>
+                        <p class="pl-8">
+                            0 (539) 660 20 62
+                        </p>
+                    </li>
+
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+                        <span class="flex">
+                            <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>                                <p class=" ml-2">
+                                09.00-18.00
+                            </p>
+                        </span>
+                        <p class="pl-8">
+                            Pazar Günleri Hariç
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="flex-1 pl-4">
+                <p class="uppercase text-gray-500 underline md:mb-6">Siteler</p>
+                <ul class="list-reset mb-6">
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="https://www.kozmikbilincokulu.com/" class="no-underline hover:text-secondary-100 text-highlighted">kozmikbilincokulu.com</a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="https://uranyenastrolojidernegi.com/" class="no-underline hover:text-secondary-100 text-highlighted">uranyenastrolojidernegi.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1  pl-4">
+                <p class="uppercase text-gray-500 underline md:mb-6">Sosyal Medya</p>
+                <ul class="list-reset mb-6">
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="https://www.facebook.com/sevilayericdem" class="no-underline hover:text-secondary-100 text-highlighted">Facebook</a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="https://www.instagram.com/uranyenastrolog/" class="no-underline hover:text-secondary-100 text-highlighted">Instagram</a>
+                    </li>
+                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                        <a href="https://twitter.com/SevilayEricdem" class="no-underline hover:text-secondary-100 text-highlighted">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="text-secondary-100  mb-12 text-center">
+            &bull; 2021  &bull; Tüm hakları saklıdır.  &bull; Version 1.0.0 &bull; Developed by Esma Ayalgu Ari
+        </p>
+
+
+    </div>
+
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    /*Toggle appointment*/
+    $(document).ready(function(){
+        $(document.getElementById("appointment")).click(function(){
+            $(document.getElementById("appointment-toggle")).toggle();
+        });
+    });
+
+
+    /*Toggle dropdown list*/
+    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
+
+    document.onclick = check;
+    function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+            // click NOT on the menu
+            if (checkParent(target, navMenu)) {
+                // click on the link
+                if (navMenuDiv.classList.contains("hidden")) {
+                    navMenuDiv.classList.remove("hidden");
+                } else {
+                    navMenuDiv.classList.add("hidden");
+                }
+            } else {
+                // click both outside link and outside menu, hide menu
+                navMenuDiv.classList.add("hidden");
+            }
+        }
+    }
+    function checkParent(t, elm) {
+        while (t.parentNode) {
+            if (t == elm) {
+                return true;
+            }
+            t = t.parentNode;
+        }
+        return false;
+    }
+
+    /*make menu white*/
+
+    var scrollpos = window.scrollY;
+    var header = document.getElementById("header");
+    var navcontent = document.getElementById("nav-content");
+    var navaction = document.getElementById("navAction");
+    var brandname = document.getElementById("brandname");
+    var toToggle = document.querySelectorAll(".toggleColour");
+
+    document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+            header.classList.add("bg-light");
+
+            //Use to switch toggleColour colours
+            for (var i = 0; i < toToggle.length; i++) {
+                toToggle[i].classList.add("text-gray-800");
+                toToggle[i].classList.remove("text-white");
+            }
+            header.classList.add("shadow");
+            navcontent.classList.add("bg-light");
+        } else {
+            header.classList.remove("bg-light");
+
+            //Use to switch toggleColour colours
+            for (var i = 0; i < toToggle.length; i++) {
+                toToggle[i].classList.add("text-white");
+                toToggle[i].classList.remove("text-gray-800");
+            }
+
+            header.classList.remove("shadow");
+            navcontent.classList.remove("bg-light");
+            navcontent.classList.add("bg-gray-100");
+        }
+    });
+</script>
+
+</body>
+</html>

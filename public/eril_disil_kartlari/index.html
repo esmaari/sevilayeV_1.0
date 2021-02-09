@@ -1,0 +1,543 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../img/se-logo.png">
+
+
+	<style>
+		.rotateOutDownLeft {
+			-webkit-animation-name: rotateOutDownLeft;
+			animation-name: rotateOutDownLeft;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+		@-webkit-keyframes rotateOutDownLeft {
+			0% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				opacity: 1;
+			}
+			100% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				-webkit-transform: rotate3d(0, 0, 1, 45deg);
+				transform: rotate3d(0, 0, 1, 45deg);
+				opacity: 0;
+			}
+		}
+		@keyframes rotateOutDownLeft {
+			0% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				opacity: 1;
+			}
+			100% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				-webkit-transform: rotate3d(0, 0, 1, 45deg);
+				transform: rotate3d(0, 0, 1, 45deg);
+				opacity: 0;
+			}
+		}
+
+		.rotateOutDownRight {
+			-webkit-animation-name: rotateOutDownRight;
+			animation-name: rotateOutDownRight;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+		@-webkit-keyframes rotateOutDownRight {
+			0% {
+				-webkit-transform-origin: right bottom;
+				transform-origin: right bottom;
+				opacity: 1;
+			}
+			100% {
+				-webkit-transform-origin: right bottom;
+				transform-origin: right bottom;
+				-webkit-transform: rotate3d(0, 0, 1, -45deg);
+				transform: rotate3d(0, 0, 1, -45deg);
+				opacity: 0;
+			}
+		}
+		@keyframes rotateOutDownRight {
+			0% {
+				-webkit-transform-origin: right bottom;
+				transform-origin: right bottom;
+				opacity: 1;
+			}
+			100% {
+				-webkit-transform-origin: right bottom;
+				transform-origin: right bottom;
+				-webkit-transform: rotate3d(0, 0, 1, -45deg);
+				transform: rotate3d(0, 0, 1, -45deg);
+				opacity: 0;
+			}
+		}  .rotateOutUpLeft {
+			   -webkit-animation-name: rotateOutUpLeft;
+			   animation-name: rotateOutUpLeft;
+			   -webkit-animation-duration: 1s;
+			   animation-duration: 1s;
+			   -webkit-animation-fill-mode: both;
+			   animation-fill-mode: both;
+		   }
+		@-webkit-keyframes rotateOutUpLeft {
+			0% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				opacity: 1;
+			}
+			100% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				-webkit-transform: rotate3d(0, 0, 1, -45deg);
+				transform: rotate3d(0, 0, 1, -45deg);
+				opacity: 0;
+			}
+		}
+		@keyframes rotateOutUpLeft {
+			0% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				opacity: 1;
+			}
+			100% {
+				-webkit-transform-origin: left bottom;
+				transform-origin: left bottom;
+				-webkit-transform: rotate3d(0, 0, 1, -45deg);
+				transform: rotate3d(0, 0, 1, -45deg);
+				opacity: 0;
+			}
+		}
+		.ui-effects-transfer { border: 5px solid #C48D16; border-radius: 3px; }
+
+	</style>
+
+
+</head>
+
+<body class="leading-normal tracking-normal text-light" style="background-image: url('bg4.png')">
+
+<div id="main-container" class="">
+
+	<nav id="header" class="fixed w-full z-30 top-0 sm:px-20 px-2 text-highlighted">
+		<div class="w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
+			<div class="flex items-center">
+				<a class="toggleColour no-underline hover:no-underline" href="../index.html">
+					<img class="h-16 w-16" src="../img/se-logo.png" alt="se-logo">
+				</a>
+			</div>
+
+			<div class="block lg:hidden">
+				<button id="nav-toggle" class="flex items-center text-highlighted hover:text-secondary-100 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+					<svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+
+
+			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent lg:p-0 z-20" id="nav-content">
+				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+					<li class="mr-3">
+						<a class="inline-block hover:text-secondary-100 py-2 px-4 font-bold no-underline" href="../index.html">Ana Sayfa</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block no-underline hover:text-secondary-100 hover:text-underline py-2 px-4" href="./info.html">Bilgi</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--<hr class="border-b border-light opacity-25 my-0 py-0" />-->
+	</nav>
+
+
+	<div class="mt-40">
+
+		<div class="w-5/6 m-auto">
+			<div class="mt-24" id="eriller"></div>
+			<div class="mt-24" id="disiller"></div>
+		</div>
+
+		<div class="m-40 w-1/2 m-auto ">
+			<div class="flex flex-wrap mt-40 justify-center">
+
+				<div class="">
+					<img id="secEril" src="bos.png" class="imgerildisilsecilen m-4 w-20 border-3 border-light border-solid rounded-md">
+				</div>
+
+				<div class="">
+					<img id="secDisil" src="bos.png" class="imgerildisilsecilen m-4 w-20 border-3 border-light border-solid rounded-md">
+				</div>
+
+			</div>
+
+
+
+			<div class="col-md-12 "  style="margin-top:50px;margin-bottom:50px" >
+
+				<div id="errorMessage" style= "margin: 0 auto;   width:50%; color: white; font-size: 25px;"  align="center"; >
+					<p>Lütfen kart seçiniz!</p>
+				</div>
+
+				<div style="margin:0 auto; width:50%;" align="center">
+
+					<div class="" style="text-align: center;">
+						<button  onclick="kartlarikaristir()" class="py-2 px-4 bg-highlighted text-light rounded-lg shadow-md hover:bg-secondary-100 my-3"> KARTLARI KARIŞTIR</button>
+
+						<button  onclick="sonucgoster()" class="py-2 px-4 bg-highlighted text-light rounded-lg shadow-md hover:bg-secondary-100 my-3"> KARTLARI GÖSTER</button>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<!--Footer-->
+	<footer class="bg-light">
+		<div class="container mx-auto px-8">
+			<div class="w-full flex flex-col md:flex-row py-6">
+				<div class="flex-1">
+					<ul class="list-reset mb-6">
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+							<a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+								<img class="h-24" src="../img/se-logo.png">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="flex-1  pl-4">
+					<p class="uppercase text-gray-500 underline md:mb-6">İletişim</p>
+					<ul class="list-reset mb-6">
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+                        <span class="flex">
+                            <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <p class=" ml-2">
+                                Email
+                            </p>
+                        </span>
+							<p class="pl-8">
+								info@kozmikbilincokulu.com
+							</p>
+						</li>
+
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+                        <span class="flex">
+                            <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>                                <p class=" ml-2">
+                                Telefon
+                            </p>
+                        </span>
+							<p class="pl-8">
+								0 (539) 660 20 62
+							</p>
+						</li>
+
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0 text-secondary-100">
+                        <span class="flex">
+                            <svg class="h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>                                <p class=" ml-2">
+                                09.00-18.00
+                            </p>
+                        </span>
+							<p class="pl-8">
+								Pazar Günleri Hariç
+							</p>
+						</li>
+
+					</ul>
+				</div>
+				<div class="flex-1 pl-4">
+					<p class="uppercase text-gray-500 underline md:mb-6">Siteler</p>
+					<ul class="list-reset mb-6">
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
+							<a href="https://www.kozmikbilincokulu.com/" class="no-underline hover:text-secondary-100 text-highlighted">kozmikbilincokulu.com</a>
+						</li>
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
+							<a href="https://uranyenastrolojidernegi.com/" class="no-underline hover:text-secondary-100 text-highlighted">uranyenastrolojidernegi.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="flex-1  pl-4">
+					<p class="uppercase text-gray-500 underline md:mb-6">Sosyal Medya</p>
+					<ul class="list-reset mb-6">
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
+							<a href="https://www.facebook.com/sevilayericdem" class="no-underline hover:text-secondary-100 text-highlighted">Facebook</a>
+						</li>
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
+							<a href="https://www.instagram.com/uranyenastrolog/" class="no-underline hover:text-secondary-100 text-highlighted">Instagram</a>
+						</li>
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
+							<a href="https://twitter.com/SevilayEricdem" class="no-underline hover:text-secondary-100 text-highlighted">Twitter</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<p class="text-secondary-100  mb-12 text-center">
+				&bull; 2021  &bull; Tüm hakları saklıdır.  &bull; Version 1.0.0 &bull; Developed by Esma Ayalgu Ari
+			</p>
+
+
+		</div>
+
+	</footer>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script>
+
+        $(document).ready(function () {
+
+            resimleriyukle();
+
+            kartlarihazirla();
+
+        });
+        var erilArray;
+        var disilArray;
+
+        function sonucgoster(){
+
+            let error = document.getElementById('errorMessage');
+
+
+            if (erilArray[secileneril] !== undefined && disilArray[secilendisil] !== undefined) {
+                error.style.display="none";
+
+
+                $('#secEril').attr("src",'eril_web/Eril_enerji_diyorki_0'+erilArray[secileneril]+'.jpg');
+                $('#secEril' ).animate({     width: '300px' });
+                $('#secDisil').attr("src",'disil_web/Disil_enerji_diyorki_0'+disilArray[secilendisil]+'.jpg');
+                $('#secDisil' ).animate({    width: '300px' });
+            } else {
+                error.style.display="inline";
+
+            }
+
+        }
+
+        var secileneril;
+        var secilendisil;
+
+
+        function resimleriyukle()
+        {
+            $('#eriller').html('');
+
+            var rl='';
+            var a=0;
+            for(var i=0;i<2;i++)
+            {
+                for(var j=0;j<27;j++)
+                {
+                    rl=rl+'<img src="eril.png" class="imgeril -mb-4 -ml-6 border-2 border-light border-solid  mr-6px rounded-lg w-20 h-24 hover:w-24 hover:-mt-4 cursor-pointer"  data-id="'+a+'"> ';
+                    a++;
+                }
+                $('#eriller').append('<div class="erildiv flex flex-wrap pl-6">'+rl+'</div>');
+                rl='';
+            }
+
+
+            $('#disiller').html('');
+
+            rl='';
+            a=0;
+            for(var i=0;i<2;i++)
+            {
+                for(var j=0;j<27;j++)
+                {
+                    rl=rl+'<img src="disil.png" class="imgdisil -mb-4 -ml-6 border-2 border-light border-solid  mr-6px rounded-lg w-20 h-24 hover:w-24 hover:-mt-4 cursor-pointer" data-id="'+a+'"> ';
+                    a++;
+
+                }
+                $('#disiller').append('<div class="disildiv flex flex-wrap pl-6">'+rl+'</div>');
+                rl='';
+            }
+
+            $( ".imgeril" ).on( "click", function() {
+                runEffect(this,'#secEril');
+                secileneril= $(this).data( "id" )
+                return false;
+            });
+            $( ".imgdisil" ).on( "click", function() {
+                runEffect(this,'#secDisil');
+                secilendisil= $(this).data( "id" )
+                return false;
+            });
+
+        }
+
+        function runEffect(ths,iidd) {
+            $(ths).effect( "transfer", { to: iidd, className: "ui-effects-transfer" }, 500, callback(ths) );
+            if(iidd.indexOf('secEril')>0)
+                $(iidd).attr("src","eril.png");
+            else
+                $(iidd).attr("src","disil.png");
+        };
+
+        function callback(ths) {
+            setTimeout(function() {
+                $(ths).removeAttr( "style" ).hide().fadeIn();
+            }, 1000 );
+        };
+
+        // Set effect from select menu value
+
+        function kartlarihazirla() {
+
+
+
+
+            var list = [];
+            for(var i=1;i<55;i++){
+                list.push(i);
+            }
+            erilArray=list.sort(() => Math.random() - 0.5);
+
+            list = [];
+            for(var i=1;i<55;i++){
+                list.push(i);
+            }
+            disilArray=list.sort(() => Math.random() - 0.5);
+        };
+
+        function kartlarikaristir() {
+
+            erilArray[secileneril] = undefined;
+            disilArray[secilendisil] = undefined;
+
+            var elementEril = document.getElementsByClassName("imgeril");
+
+            for (let i= 0; i< 54; i++) {
+                if (i % 2 === 0 ) {
+                    elementEril[i].classList.add("rotateOutDownLeft");
+                } else {
+                    elementEril[i].classList.add("rotateOutDownRight");
+                }
+            }
+
+
+            var elementDisil = document.getElementsByClassName("imgdisil");
+
+            for (let i= 0; i< 54; i++) {
+                if (i % 2 === 0 ) {
+                    elementDisil[i].classList.add("rotateOutDownLeft");
+                } else {
+                    elementDisil[i].classList.add("rotateOutDownRight");
+                }
+            }
+
+
+            setTimeout(function(){
+                for (let i= 0; i< 54; i++) {
+                    elementEril[i].classList.remove('rotateOutDownLeft');
+                    elementEril[i].classList.remove('rotateOutDownRight');
+                    elementDisil[i].classList.remove('rotateOutDownLeft');
+                    elementDisil[i].classList.remove('rotateOutDownRight');
+
+                }
+            },1000);
+
+
+            $('#secEril').attr("src",'bos.png');
+            $('#secEril' ).animate({width: '100px'});
+            $('#secDisil').attr("src",'bos.png');
+            $('#secDisil' ).animate({ width: '100px'});
+
+        }
+
+
+        /*Toggle dropdown list*/
+        /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+        var navMenuDiv = document.getElementById("nav-content");
+        var navMenu = document.getElementById("nav-toggle");
+
+        document.onclick = check;
+        function check(e) {
+            var target = (e && e.target) || (event && event.srcElement);
+
+            //Nav Menu
+            if (!checkParent(target, navMenuDiv)) {
+                // click NOT on the menu
+                if (checkParent(target, navMenu)) {
+                    // click on the link
+                    if (navMenuDiv.classList.contains("hidden")) {
+                        navMenuDiv.classList.remove("hidden");
+                    } else {
+                        navMenuDiv.classList.add("hidden");
+                    }
+                } else {
+                    // click both outside link and outside menu, hide menu
+                    navMenuDiv.classList.add("hidden");
+                }
+            }
+        }
+        function checkParent(t, elm) {
+            while (t.parentNode) {
+                if (t == elm) {
+                    return true;
+                }
+                t = t.parentNode;
+            }
+            return false;
+        }
+
+        /*make menu white*/
+
+        var scrollpos = window.scrollY;
+        var header = document.getElementById("header");
+        var navcontent = document.getElementById("nav-content");
+        var navaction = document.getElementById("navAction");
+        var brandname = document.getElementById("brandname");
+        var toToggle = document.querySelectorAll(".toggleColour");
+
+        document.addEventListener("scroll", function () {
+            /*Apply classes for slide in bar*/
+            scrollpos = window.scrollY;
+
+            if (scrollpos > 10) {
+                header.classList.add("bg-light");
+
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                    toToggle[i].classList.add("text-gray-800");
+                    toToggle[i].classList.remove("text-white");
+                }
+                header.classList.add("shadow");
+                navcontent.classList.add("bg-light");
+            } else {
+                header.classList.remove("bg-light");
+
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                    toToggle[i].classList.add("text-white");
+                    toToggle[i].classList.remove("text-gray-800");
+                }
+
+                header.classList.remove("shadow");
+                navcontent.classList.remove("bg-light");
+                navcontent.classList.add("bg-gray-100");
+            }
+        });
+	</script>
+
+
+</body>
+
+</html>
